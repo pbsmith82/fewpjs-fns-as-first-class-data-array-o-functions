@@ -32,9 +32,12 @@ return `Unleash ${dogName} the ${dogBreed}`
 
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
-
-function exerciseDog(name, breed) {
-    debugger
-    
+const txt = []
+function exerciseDog(dogName, dogBreed) {
+    routine.forEach(myFunction)
+    function myFunction (value, index, array) {
+        txt.push(value(dogName, dogBreed)) 
+    }
+    return txt
 }
 
